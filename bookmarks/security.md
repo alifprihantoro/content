@@ -1,0 +1,3 @@
+- news :
+  - https://krebsonsecurity.com/
+  - https://thehackernews.com/

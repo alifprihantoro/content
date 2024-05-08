@@ -1,0 +1,3 @@
+- refrence code :
+  - https://radixweb.com/blog/javascript-practices-and-tools
+  - https://www.w3schools.com/js/js_best_practices.aspkk

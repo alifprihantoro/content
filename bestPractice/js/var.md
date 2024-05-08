@@ -1,0 +1,6 @@
+- UPPER_CASE = for imutable/const
+- lower_case = for mut/let
+- isDothat = ternary or boolean
+- checkThis = function with return boolean
+- someFunct = normal func
+- ObjectClass = type object or class

@@ -1,4 +1,4 @@
-# storybook basic notes
+[#]() storybook basic notes
 ## install
 ```bash
 pnpm dlx storybook@latest init

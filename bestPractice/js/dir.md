@@ -1,0 +1,2 @@
+struktur dir
+name file

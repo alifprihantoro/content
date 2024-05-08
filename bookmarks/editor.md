@@ -1,0 +1,13 @@
+- apps :
+  - [x] [neovim](https://neovim.io/) : `pkg install neovim`
+  - vscode
+  - [nano](https://www.nano-editor.org/) : `pkg install nano`
+- cloud :
+  - [x] [github codespace](https://github.com/features/codespaces)
+  - [gitpod](https://www.gitpod.io/)
+  - [codesandbox](https://codesandbox.io/)
+- online web based :
+  - [stackblitz](https://stackblitz.com/)
+  - [codepen](https://codepen.io/)
+- offline web based :
+  - [code-server](https://github.com/coder/code-server) : `pkg install code-server`

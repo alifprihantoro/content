@@ -13,17 +13,19 @@
   - [vtop](https://github.com/MrRio/vtop) : `pnpm i -g vtop`
   - [gotop](https://github.com/xxxserxxx/gotop) : `pkg install gotop` or `go install github.com/xxxserxxx/gotop/v4/cmd/gotop@latest`
 - cat with syntax hilight :
-  - [bat](https://github.com/sharkdp/bat) : `pkg install bat`
+  - [x] [bat](https://github.com/sharkdp/bat) : `pkg install bat`
 - manual page :
-  - [man](https://gitlab.com/man-db/man-db) : `pkg install man`
+  - [x] [man](https://gitlab.com/man-db/man-db) : `pkg install man`
 - portable command-line YAML, JSON, XML, CSV, TOML and properties processor :
-  - [yq](https://github.com/mikefarah/yq) : `pkg install yq`
+  - [x] [yq](https://github.com/mikefarah/yq) : `pkg install yq`
 - The next gen ls command :
   - [x] [lsd](https://github.com/lsd-rs/lsd) : `pkg install lsd`
-  - [exa](https://github.com/ogham/exa) : `pkg install exa` or `cargo install exa`
+  - [eza](https://github.com/eza-community/eza) : `pkg install eza` or `cargo install eza`
 - github cli :
-  - [gh](https://cli.github.com/) : `pkg install gh`
+  - [x] [gh](https://cli.github.com/) : `pkg install gh`
 - recursively searches directories for a regex pattern while respecting your gitignore :
-  - [rg](https://github.com/BurntSushi/ripgrep) : `pkg install rigrep`
+  - [x] [rg](https://github.com/BurntSushi/ripgrep) : `pkg install rigrep`
 - fuzzy finder :
-  - [fzf](https://github.com/junegunn/fzf) : `pkg install fzf`
+  - [x] [fzf](https://github.com/junegunn/fzf) : `pkg install fzf`
+- vcs :
+  - [x] [git](https://git-scm.com/doc) : `pkg install git`

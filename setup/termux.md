@@ -44,7 +44,7 @@ proot-distro install ubuntu-lts
 proot-distro login ubuntu-lts
 apt update -y
 apt upgrade -y
-apt install chromium firefox-esr tigervnc-standalone-server tigervnc-common xfce4-terminal openbox
+apt install chromium firefox-esr tigervnc-standalone-server tigervnc-common xfce4-terminal openbox jgmenu
 mkdir .config
 cd .config
 ln -s /data/data/com.termux/files/home/.myconf/openbox/

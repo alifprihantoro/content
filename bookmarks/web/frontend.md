@@ -1,0 +1,4 @@
+- ui :
+  - [x] [daisy ui](https://daisyui.com/) : `pnpm add -D daisyui@latest`
+  - https://primereact.org/mention/
+  - https://react-spectrum.adobe.com/react-aria/components.html

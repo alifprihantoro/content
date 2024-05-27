@@ -1,0 +1,6 @@
+- umd :
+  - [d2](https://d2lang.com/)
+- prd :
+  - [template atlassian](https://www.atlassian.com/agile/product-management/requirements)
+- presentation :
+  - https://snappify.com

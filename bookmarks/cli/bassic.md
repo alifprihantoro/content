@@ -27,5 +27,7 @@
   - [x] [rg](https://github.com/BurntSushi/ripgrep) : `pkg install rigrep`
 - fuzzy finder :
   - [x] [fzf](https://github.com/junegunn/fzf) : `pkg install fzf`
-- vcs :
+- version control system vcs :
   - [x] [git](https://git-scm.com/doc) : `pkg install git`
+- window manager for cli :
+  - [x] tmux

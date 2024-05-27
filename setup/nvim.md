@@ -29,6 +29,35 @@ Setelah instalasi, Anda dapat memverifikasi instalasi dengan perintah:
 nvim -v
 ```
 
+## install from scratch
+
+1. prerequire
+
+```bash
+pkg install lua51 liblua53 liblua51 luajit libluajit luarocks luv lua-lpeg cmake make ninja clang luv libvterm libmsgpack libunibilium
+luarocks install lpeg
+luarocks install mpack
+git clone https://github.com/neovim/neovim --depth=1
+cd neovim
+```
+
+> [!IMPORTANT]
+> kemungkinan ada pkg yang belum saya sertakan (pkg diatas sebenarnya tidak perlu diinstall). Jika terjadi error, silahkan kunjungi link berikut dan coba install satu persatu. [link prerequire](https://github.com/neovim/neovim/blob/v0.10.0/BUILD.md#build-prerequisites)
+
+2. build
+```bash
+cmake -S cmake.deps -B .deps -G Ninja -D CMAKE_BUILD_TYPE=Release -DUSE_BUNDLED=OFF -DUSE_BUNDLED_LIBVTERM=ON -DUSE_BUNDLED_TS=ON
+cmake --build .deps
+make CMAKE_INSTALL_PREFIX=~/../usr CMAKE_BUILD_TYPE=Release install
+```
+> [!WARNING]
+> If treesitter parsers are not bundled, they need to be available in a `parser/` runtime directory (e.g. `/usr/share/nvim/runtime/parser/`).
+
+## Uninstall
+```bash
+cd ~/../usr
+rm -rf lib/nvim share/nvim bin/nvim
+```
 ## Mode di Neovim
 
 1. **Mode Normal**:
@@ -68,7 +97,6 @@ nvim -v
    - Gunakan **h**, **j**, **k**, dan **l** untuk berpindah di mode normal.
    - **h** dan **l** untuk perpindahan horizontal (kiri dan kanan).
    - **j** dan **k** untuk perpindahan vertikal (atas dan bawah).
-
 
 ## Setup configs
 
@@ -125,5 +153,23 @@ mv ~/go/bin/golangci-lint-langserver ~/../usr/bin/
 go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
 mv ~/go/bin/golangci-lint ~/../usr/bin/
 ```
+
+### setup codeium
+
+<!--TODO: ganti configs aja untuk path bin -->
+
+hapus file `language_server_linux_arm` di folder `~/.codeium/bin/98dd1530ef0dce8888caa538e96fe193a7956819/` (jika random file lebih dari 1 maka hapus semua dulu), lalu buat file yang sama lalu paste code berikut :
+
+> [!WARNING]
+> mungkin nama folder akan berubah jika kita melakukan update. lakukan cara seperti ini, jika folder name berubah
+
+```bash
+#!/data/data/com.termux/files/usr/bin/bash
+
+proot-distro login debian -- /root/.codeium/bin/<path>/language_server_linux_arm $@
+```
+
+> [!NOTE]
+> ganti sesuai proot distro kalian, dan `<path>` diganti sesuai path kalian masing-masing
 
 Bagaimana, mulai tertarik? tulis di kolom komentar dibawah jika kalian rasa ada yang ingin kalian tahu. see you next time.

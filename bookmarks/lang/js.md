@@ -1,0 +1,2 @@
+- typescript :
+  - https://www.totaltypescript.com/concepts/the-prettify-helper

@@ -1,0 +1,23 @@
+- db :
+  - prisma
+  - gql.tada
+- free host :
+  - [x] netlify
+  - [x] firebase
+  - convex.dev
+  - [x] vercel
+  - [x] supabase
+  - cloudflare
+  - https://render.com/pricing#compute
+  - https://cloudinary.com/developers
+  - php : https://www.infinityfree.com/#google_vignette
+- auth :
+  - https://lucia-auth.com/
+  - https://kinde.com/pricing/?utm_source=google&utm_medium=search&utm_campaign=ggl18oct23&utm_term=alternatives
+- utils :
+  - https://the-guild.dev/graphql/codegen/plugins/typescript/typescript
+  - rate limitter (exam kv/vercel)
+- search :
+  - https://pagefind.app/
+- email :
+  - https://resend.com/

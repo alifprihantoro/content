@@ -1,0 +1,7 @@
+- analytics :
+  - https://posthog.com
+- testing :
+  - [x] storybook
+  - [lighthouse](https://github.com/GoogleChrome/lighthouse)
+  - [x] playwright
+  - k6 load test

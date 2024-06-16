@@ -21,3 +21,5 @@
   - https://pagefind.app/
 - email :
   - https://resend.com/
+- etc :
+  - race condition

@@ -1,1 +1,2 @@
 - https://mingyang-li.medium.com/production-grade-node-js-typescript-folder-structure-for-2024-f975edeabefd
+- https://www.google.com/amp/s/www.nodeteam.onix-systems.com/blog/how-to-organize-typescript/amp/

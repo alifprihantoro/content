@@ -17,4 +17,4 @@ done
 Dalam contoh pertama, loop `for` mengiterasi semua folder di direktori saat ini. Dalam contoh kedua, loop `for` mengiterasi semua item dan menggunakan kondisi `if` untuk memeriksa apakah item tersebut adalah file sebelum mencetak namanya. Apakah ada yang spesifik yang Anda cari dalam loop ini?
 
 ## loop array
-check [here](./array.md)
+check [here](./array.md#loop)

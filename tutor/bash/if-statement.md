@@ -68,4 +68,4 @@ fi
 Dalam contoh ini, kita memeriksa bahwa string **tidak** cocok dengan pola regex yang diberikan. Apakah ini membantu?
 
 ### match in array
-see in [here](./array.md)
+see in [here](./array.md#contains-var)

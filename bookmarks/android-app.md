@@ -1,0 +1,4 @@
+- termux
+- termux api
+- anysoftkey
+- esuper

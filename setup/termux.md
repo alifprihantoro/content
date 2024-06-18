@@ -1,5 +1,30 @@
 # setup termux
 
+## setup termux
+- delete/custom text output if first open
+```sh
+rm ~/../usr/etc/motd
+```
+- add startup (every first open o4 new session)
+> example
+```sh
+echo "tmux attach \; send-keys tmuxl C-m" >~/../usr/etc/termux-login.sh
+```
+- custom keyboard goto [here](https://wiki.termux.com/wiki/Touch_Keyboard)
+- custom color :
+  - goto `~/.termux/colors.properties`
+  - reaplace color on that file
+> [!IMPORTANT]
+> you can find best colorscheme to you terminal. example i use [Tokyo Night](https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/kitty/tokyonight_moon.conf), but you must delete some color (you just only use `color<num>` exaple `color0 #1b1d2b`)
+- change your font :
+  - download your best font, i recomended use this [link](https://www.nerdfonts.com/font-downloads)
+  - find your best font in that website
+  - extract reaplace to `~/.termux/font.ttf`
+- make zsh to default :
+> if you change package manager, do this again
+```sh
+chsh -s zsh          # set default to zsh
+```
 ## change package manager
 
 > official docs : https://wiki.termux.com/wiki/Switching_package_manager
@@ -28,6 +53,7 @@ pacman-key --populate
 ```
 - then try some install app with `pacman -S` or like normal `pkg install`
 
+
 ## setup with myconf
 > [!warning]
 > maybe you not use all of my install. check file `termuxInstall.sh` and remove if not you use. change email and username git.
@@ -35,74 +61,3 @@ pacman-key --populate
 git clone --depth=1 https://github.com/alifprihantoro/dotconf ~/.myconf
 bash .myconf/termuxInstall.sh
 ```
-## setup proot distro
-
-```bash
-pkg install proot proot-distro -y
-proot-distro list # get list
-proot-distro install ubuntu-lts
-proot-distro login ubuntu-lts
-apt update -y
-apt upgrade -y
-apt install chromium firefox-esr tigervnc-standalone-server tigervnc-common xfce4-terminal openbox jgmenu
-mkdir .config
-cd .config
-ln -s /data/data/com.termux/files/home/.myconf/openbox/
-```
-
-create text `.bashrc` :
-
-```bash
-alias sta='
-rm -r .vnc/:*
-rm -r .vnc/loc*
-rm -r /tmp/.*
-vncserver -geometry 1561x720'
-```
-
-if use `.myconf` :
-
-```bash
-ln -s /data/data/com.termux/files/home/.myconf/bash/.bashrc
-```
-
-### fonts
-
-- download font : https://www.nerdfonts.com/font-downloads
-- unzip to `~/.fonts/nameFont`
-- reload font `fc-cache -fv` or exit then open again
-
-### themes
-
-> pastikan tidak ada folder `.themes`
-
-- clone this `git clone https://github.com/addy-dclxvi/openbox-theme-collections --depth=1 ~/.themes`
-- change with objconf
-
-### xfce4-terminal
-
-buat file di `~/.config/xfce4/terminal/terminalrc` yang ada di folder `.myconfig/xfce4/terminal/terminalrc`
-
-atau :
-
-```bash
-cd ~/.config
-ln -s $dc/xfce4
-```
-
-### openbox
-
-- lihat pada folder `.myconf/openbox/rc.xml`
-- taruh di folder `.config/openbox/rc.xml`
-  atau
-
-```bash
-cd ~/.config
-ln -s $dc/openbox
-```
-
-### browser
-
-- chrome : `chromium --no-sandbox --force-dark-mode`
-- firefox : `firefox --display=:1`
-- terminal : `xfce4-terminal`

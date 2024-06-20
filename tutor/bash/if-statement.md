@@ -9,25 +9,25 @@
 
 Contoh penggunaan dalam skrip bash:
 
+> [!WARNING]
+> pastinkan tanda `[[  ]]`, pastikan beri spasi agar tidak error.
+
 ```bash
-if [ "$a" -eq "$b" ]; then
+if [[ "$a" -eq "$b" ]]; then
   echo "a sama dengan b"
 fi
 
-if [ "$a" -le "$b" ]; then
+if [[ "$a" -le "$b" ]]; then
   echo "a kurang dari atau sama dengan b"
 fi
 
 # dan seterusnya...
 ```
 
-> [!IMPORTANT]
-> Perhatikan bahwa untuk perbandingan string, kita menggunakan `==` dan `!=`. Apakah ada hal lain yang bisa saya bantu?
-
 ### Untuk **jika string cocok dengan string** (string matches):
 
 ```bash
-if [ "$string1" == "$string2" ]; then
+if [[ "$string1" == "$string2" ]]; then
   echo "String cocok."
 fi
 ```
@@ -35,7 +35,7 @@ fi
 ### Untuk **jika string tidak cocok dengan string** (string does not match):
 
 ```bash
-if [ "$string1" != "$string2" ]; then
+if [[ "$string1" != "$string2" ]]; then
   echo "String tidak cocok."
 fi
 ```

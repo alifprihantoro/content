@@ -56,7 +56,7 @@ make CMAKE_INSTALL_PREFIX=~/../usr CMAKE_BUILD_TYPE=Release install
 ## Uninstall
 ```bash
 cd ~/../usr
-rm -rf lib/nvim share/nvim bin/nvim
+rm -rf lib/nvim share/nvim bin/nvim lib/lua/5.1/lpeg.so share/lua/5.1/re.lua share/applications/nvim.desktop share/icons/hicolor/128x128/apps/nvim.png
 ```
 ## Mode di Neovim
 

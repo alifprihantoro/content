@@ -1,3 +1,6 @@
 - news :
   - https://krebsonsecurity.com/
   - https://thehackernews.com/
+- tools :
+  - https://github.com/projectdiscovery/nuclei?tab=readme-ov-file#install-nuclei
+  - https://google.github.io/osv-scanner/

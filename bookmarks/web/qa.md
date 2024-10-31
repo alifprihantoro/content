@@ -12,3 +12,5 @@
     - [k6](https://k6.io/)
   - db :
     - [pgbanch](https://www.postgresql.org/docs/current/pgbench.html)
+- backend emulator :
+  - [aws](https://www.localstack.cloud/)
